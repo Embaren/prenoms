@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Prenomscore</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+  <meta content="utf-8" http-equiv="encoding">
+
+</head>
+<body>
+  <div id = "page">
+    <header>
+      <h1 id="header-title">Combien de points vaut votre prénom ?</h1>
+      <hr>
+    </header>
+  
+    <div id="content">
+      <p id="formText">Entrez la 1e lettre de votre prénom :</p>
+      <form id="letterForm" action="#" onsubmit="return false;">
+        <input type="text" name="letterInput" maxlength="1">
+        <input type="submit" value="Ajouter la lettre" onclick="addLetter(this.parentNode);">
+        <input type="submit" value="Mon prénom est épelé !" onclick="endForm(this.parentNode);">
+      </form>
+      <p id="displayText">Votre prénom :</p>
+      <p id="dynamicDisplay"></p>
+    </div>
+    
+    <footer>
+      <hr>
+      <div id="mentions-legales">
+        <p>
+          2022, @prenomscore™, marque (non) déposée de EmileSARL
+        </p>
+        <p>
+          Contact : <a href="mailto:contact@emilesdate.fr">contact@emilesdate.fr</a>
+        </p>
+      </div>
+    </footer>
+  </div>
+  <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
