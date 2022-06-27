@@ -50,7 +50,7 @@ function endForm(element){
   document.getElementById("displayText").hidden=true;
     
   dist = levenshtein("EMILE",currentName);
-  value = 1 - (2*sigmoid(dist/5)-1);
+  value = 2*(1 - sigmoid(dist/5));
     
   content = document.getElementById("content");
     
